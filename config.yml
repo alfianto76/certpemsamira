@@ -1,0 +1,11 @@
+tunnel: a2310c03-180d-4692-a985-d092882e7877
+credentials-file: /home/samira/.cloudflared/a2310c03-180d-4692-a985-d092882e7877.json
+
+ingress:
+  - hostname: klinik.samirakreasi.com
+    service: http://localhost:3001
+  - hostname: lis.samirakreasi.com
+    service: http://localhost:3002
+  - hostname: ris.samirakreasi.com
+    service: http://localhost:3003
+  - service: http_status:404
